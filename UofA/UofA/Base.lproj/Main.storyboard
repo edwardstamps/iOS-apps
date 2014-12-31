@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UofA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bam-P5-6WE">
+                                <rect key="frame" x="178" y="156" width="243" height="243"/>
+                                <state key="normal" image="Big Big A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BearDownPlay:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UgB-ht-PCi"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-Qk-Bec">
+                                <rect key="frame" x="274" y="473" width="50" height="50"/>
+                                <state key="normal" image="Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopPlay:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z1y-Fn-Pzd"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bear Down Arizona" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEK-8G-yRE">
+                                <rect key="frame" x="159" y="92" width="281" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1Kk-Qk-Bec" secondAttribute="centerX" constant="1" id="1o3-KT-QyB"/>
+                            <constraint firstAttribute="centerY" secondItem="Bam-P5-6WE" secondAttribute="centerY" constant="22" id="B9O-Jr-YNd"/>
+                            <constraint firstAttribute="centerX" secondItem="1Kk-Qk-Bec" secondAttribute="centerX" constant="1" id="W3Y-F1-3ur"/>
+                            <constraint firstAttribute="centerX" secondItem="wEK-8G-yRE" secondAttribute="centerX" id="bYa-he-iSE"/>
+                            <constraint firstAttribute="centerX" secondItem="1Kk-Qk-Bec" secondAttribute="centerX" constant="1" id="khe-pK-9nS"/>
+                            <constraint firstAttribute="centerX" secondItem="Bam-P5-6WE" secondAttribute="centerX" id="vPT-et-L2L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BearDownAZ" destination="wEK-8G-yRE" id="tLv-qF-ClA"/>
+                        <outlet property="BearDownPlay" destination="Bam-P5-6WE" id="UTt-hc-lF9"/>
+                        <outlet property="StopPlay" destination="1Kk-Qk-Bec" id="daN-V1-WDa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="413"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Big Big A" width="243" height="243"/>
+        <image name="Image" width="50" height="50"/>
+    </resources>
+</document>
